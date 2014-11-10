@@ -1,0 +1,5 @@
+use students
+
+ordered_grades = db.grades.find({ score : { $gte:65}}).sort({_id:1, score:1}); null;
+
+ordered_grades.0
