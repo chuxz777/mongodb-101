@@ -27,7 +27,7 @@ def find():
         if (student_id != grade['student_id']):
             new_id = True
             student_id = grade['student_id']
-            print "####### I will delete " grade['_id']
+            print "####### I will delete ", grade['_id']
             grades.remove({'_id':grade['_id']})
             
         new_id = False

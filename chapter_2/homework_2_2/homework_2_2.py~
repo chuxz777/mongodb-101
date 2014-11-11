@@ -21,7 +21,6 @@ def find():
     
     student_id = ''
     new_id = False
-
     
     for grade in hw_grades:
         

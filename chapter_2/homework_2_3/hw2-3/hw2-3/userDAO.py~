@@ -55,7 +55,9 @@ class UserDAO:
         try:
             # XXX HW 2.3 Students Work Here
             # you will need to retrieve right document from the users collection.
-            user = self.users.find_one({'_id': username})
+            password_hash = self.make_pw_hash(password)
+            print "Password ",password_hash 
+            user = self.users.find_one({'_id': username, 'password': password_hash})
             
             print "This space intentionally left blank."
         except:
