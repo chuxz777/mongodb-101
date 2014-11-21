@@ -1,4 +1,4 @@
-HW4_3: create indexes for the blog
+## HW4_3: create indexes for the blog
 
 1. For home page
 
@@ -11,3 +11,7 @@ db.posts.ensureIndex({ permalink : 1 })
 3. For posts by tags
 
 db.posts.ensureIndex({tags: 1, date: -1})
+
+## HW4_4 : profile log query
+
+db.profile.find({ns:/school2.students/}).sort({millis:-1}).limit(10).pretty()
